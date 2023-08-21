@@ -19,12 +19,13 @@ import cdk_nag
 
 from constants import ACCOUNT_ID
 from constants import AWS_CONTROL_TOWER_REGION
+from constants import AWS_STACK_NAME
 from stacks.aws_control_tower_guardrails_stack import AwsControlTowerGuardrailsStack
 
 env = aws_cdk.Environment(region=AWS_CONTROL_TOWER_REGION, account=ACCOUNT_ID)
 
 app = aws_cdk.App()
-AwsControlTowerGuardrailsStack(app, "aws-control-tower-guardrails", env=env)
+AwsControlTowerGuardrailsStack(app, AWS_STACK_NAME, env=env)
 aws_cdk.Aspects.of(app).add(cdk_nag.AwsSolutionsChecks())
 
 app.synth()

@@ -29,7 +29,7 @@
 ACCOUNT_ID = "741634499280"
 ROLE_ARN = "arn:aws:iam::741634499280:role/ControlTowerControlsCDK"
 AWS_CONTROL_TOWER_REGION = "ap-southeast-2"
-AWS_STACK_NAME="aws-control-tower-guardrails"
+AWS_STACK_NAME="aws-control-tower-guardrails-networks"
 
 # pylint: disable=duplicate-code
 GUARDRAILS_CONFIGURATION = [
@@ -417,7 +417,7 @@ GUARDRAILS_CONFIGURATION = [
             "HGYKZRUFIFSG", # "CT.WAFV2.PR.2",
         },
         "OrganizationalUnitIds": [
-            "ou-cwi7-vm1ftnp6", # management
+            "ou-cwi7-uwcvdf07", # management
         ],
     }
 ]
