@@ -29,13 +29,13 @@
 ACCOUNT_ID = "741634499280"
 ROLE_ARN = "arn:aws:iam::741634499280:role/ControlTowerControlsCDK"
 AWS_CONTROL_TOWER_REGION = "ap-southeast-2"
-AWS_STACK_NAME="aws-control-tower-guardrails-networks"
+AWS_STACK_NAME="aws-control-tower-guardrails"
 
 # pylint: disable=duplicate-code
 GUARDRAILS_CONFIGURATION = [
     {
         "OrganizationalUnitIds": [
-            "ou-cwi7-uwcvdf07", # networks
+            "ou-cwi7-vm1ftnp6", # management
         ],
         "Enable-Control": {
             # Strongly recommended controls
@@ -228,12 +228,12 @@ GUARDRAILS_CONFIGURATION = [
             "LYLUSATWXWGZ", # "SH.WAF.4",
 
             # # # Elective Control Tower
-            # "OTJFGEEQXKHE", # "CT.ACM.PR.1",
-            # "MGCUKHLRUHGP", # "CT.APIGATEWAY.PR.1",
-            # "EAPHSJQRHZUB", # "CT.APIGATEWAY.PR.2",
-            # "NGDIEPXBGZNX", # "CT.APIGATEWAY.PR.3",
-            # "WUQUVNLUXDQU", # "CT.APIGATEWAY.PR.4",
-            # "RBLHXKSFLKZA", # "CT.APIGATEWAY.PR.5",
+            "OTJFGEEQXKHE", # "CT.ACM.PR.1",
+            "MGCUKHLRUHGP", # "CT.APIGATEWAY.PR.1",
+            "EAPHSJQRHZUB", # "CT.APIGATEWAY.PR.2",
+            "NGDIEPXBGZNX", # "CT.APIGATEWAY.PR.3",
+            "WUQUVNLUXDQU", # "CT.APIGATEWAY.PR.4",
+            "RBLHXKSFLKZA", # "CT.APIGATEWAY.PR.5",
             # "VZIWINLZXVMA", # "CT.APPSYNC.PR.1",
             # "GUKAWPWOAMGJ", # "CT.AUTOSCALING.PR.1",
             # "FWWWWDZRSYOB", # "CT.AUTOSCALING.PR.2",
@@ -242,7 +242,7 @@ GUARDRAILS_CONFIGURATION = [
             # "AQIXLPCCRQHS", # "CT.AUTOSCALING.PR.5",
             # "HYEMAFKYGEOG", # "CT.AUTOSCALING.PR.6",
             # "ZBBMSBCWHDJT", # "CT.AUTOSCALING.PR.8",
-            # "UHAFTVUQLBJQ", # "CT.CLOUDFORMATION.PR.1",
+            # # "UHAFTVUQLBJQ", # "CT.CLOUDFORMATION.PR.1",
             # "HGEUZPXSVDOS", # "CT.CLOUDFRONT.PR.1",
             # "XSFJGHXKKXJQ", # "CT.CLOUDFRONT.PR.10",
             # "OLKKBIYGTTTV", # "CT.CLOUDFRONT.PR.11",
@@ -329,12 +329,12 @@ GUARDRAILS_CONFIGURATION = [
             # "FSRKKRIKNTVD", # "CT.ELASTICLOADBALANCING.PR.7",
             # "NHXVNOSXDCMQ", # "CT.ELASTICLOADBALANCING.PR.8",
             # "XCEABSKXHNEW", # "CT.ELASTICLOADBALANCING.PR.9",
-            # "CELIJOZUYTCC", # "CT.GUARDDUTY.PR.1",
-            # "OHTNYZERSTJL", # "CT.IAM.PR.1",
-            # "CAOCWBICFGOB", # "CT.IAM.PR.2",
-            # "DIYAWISHCSUP", # "CT.IAM.PR.3",
-            # "NIQNDDIAPPYT", # "CT.IAM.PR.4",
-            # "PSTEFAEBICWJ", # "CT.IAM.PR.5",
+            "CELIJOZUYTCC", # "CT.GUARDDUTY.PR.1",
+            "OHTNYZERSTJL", # "CT.IAM.PR.1",
+            "CAOCWBICFGOB", # "CT.IAM.PR.2",
+            "DIYAWISHCSUP", # "CT.IAM.PR.3",
+            "NIQNDDIAPPYT", # "CT.IAM.PR.4",
+            "PSTEFAEBICWJ", # "CT.IAM.PR.5",
             # "KREYISSWDIIL", # "CT.KINESIS.PR.1",
             # "KZDJWGKCNWVI", # "CT.KMS.PR.1",
             # "BAGTSQZJEERJ", # "CT.LAMBDA.PR.2",
@@ -418,6 +418,6 @@ GUARDRAILS_CONFIGURATION = [
             # "ZWQCPIXANTTE", # "CT.WAF.PR.2",
             # "ITRZPFPNHOVU", # "CT.WAFV2.PR.1",
             # "HGYKZRUFIFSG", # "CT.WAFV2.PR.2",
-        }
+        },
     }
 ]
