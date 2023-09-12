@@ -383,7 +383,7 @@ GUARDRAILS_CONFIGURATION = [
             "KGVGCJNUMNIY", # "CT.RDS.PR.3",
             "VGJJUWDNFDIK", # "CT.RDS.PR.4",
             "VTWUXLYFANSP", # "CT.RDS.PR.5",
-            "MKNYWNVXKUKG", # "CT.RDS.PR.6",
+            # "MKNYWNVXKUKG", # "CT.RDS.PR.6",
             "BVMANNHHVIJJ", # "CT.RDS.PR.7",
             "GJKUHDAQKCNH", # "CT.RDS.PR.8",
             "TBPEWWYHECGP", # "CT.RDS.PR.9",
