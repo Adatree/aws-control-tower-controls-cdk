@@ -1,24 +1,30 @@
 # Deploy and manage AWS Control Tower controls by using AWS CDK and AWS CloudFormation
 
 
-- [AWS Prescriptive Guidance](#aws-prescriptive-guidance)
-- [Goal](#goal)
-- [Prerequisites and limitations](#prerequisites-and-limitations)
-- [Architecture](#architecture)
-- [Tools](#tools)
-- [Best practices](#best-practices)
-- [Control Behavior And Guidance](#control-behavior-and-guidance)
-- [Setup](#setup)
-  - [Requirements](#requirements)
-  - [Prepare to enable the controls](#prepare-to-enable-the-controls)
-  - [Controls Configuration File](#controls-configuration-file)
-- [Deployment](#deployment)
-- [Useful Commands](#useful-commands)
-- [IAM policy](#iam-policy)
-- [Trust policy](#trust-policy)
-- [Authors](#authors)
-- [Security](#security)
-- [License](#license)
+- [Deploy and manage AWS Control Tower controls by using AWS CDK and AWS CloudFormation](#deploy-and-manage-aws-control-tower-controls-by-using-aws-cdk-and-aws-cloudformation)
+  - [AWS Prescriptive Guidance](#aws-prescriptive-guidance)
+  - [Goal](#goal)
+    - [Target Audience](#target-audience)
+  - [Prerequisites and limitations](#prerequisites-and-limitations)
+    - [Prerequisites](#prerequisites)
+    - [Limitations](#limitations)
+  - [Architecture](#architecture)
+  - [Tools](#tools)
+    - [AWS services](#aws-services)
+    - [Other tools](#other-tools)
+  - [Best practices](#best-practices)
+  - [Control Behavior And Guidance](#control-behavior-and-guidance)
+  - [Setup](#setup)
+    - [Requirements](#requirements)
+    - [Prepare to enable the controls](#prepare-to-enable-the-controls)
+    - [Controls Configuration File](#controls-configuration-file)
+  - [Deployment](#deployment)
+  - [Useful Commands](#useful-commands)
+  - [IAM policy](#iam-policy)
+  - [Trust policy](#trust-policy)
+  - [Authors](#authors)
+  - [Security](#security)
+  - [License](#license)
 
 ## AWS Prescriptive Guidance
 
@@ -169,6 +175,11 @@ The `package.json` requires `npm` to be already installed.
     $ npx cdk bootstrap aws://MANAGEMENT-ACCOUNT-ID/AWS-CONTROL-TOWER-REGION \
     --trust arn:aws:iam::DEPLOYMENT-ACCOUNT-ID:role/DEPLOYMENT-ROLE-NAME \
     --cloudformation-execution-policies arn:aws:iam::MANAGEMENT-ACCOUNT-ID:policy/POLICY-NAME
+    ```
+    ```
+    $ npx cdk bootstrap aws://741634499280/ap-southeast-2 \
+    --trust arn:aws:iam::741634499280:role/ControlTowerControlsCDK \
+    --cloudformation-execution-policies arn:aws:iam::741634499280:policy/ControlTowerControlsCDKPolicy
     ```
 
 ### Controls Configuration File
