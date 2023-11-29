@@ -338,7 +338,7 @@ GUARDRAILS_CONFIGURATION = [
             # "KREYISSWDIIL", # "CT.KINESIS.PR.1",
             "KZDJWGKCNWVI", # "CT.KMS.PR.1",
             "BAGTSQZJEERJ", # "CT.LAMBDA.PR.2",
-            "ORTKUZLIVKOW", # "CT.LAMBDA.PR.3",
+            # "ORTKUZLIVKOW", # "CT.LAMBDA.PR.3",
             # "ZBNZCKKEFZPZ", # "CT.NEPTUNE.PR.1",
             # "EPHJMXQEYSVC", # "CT.NEPTUNE.PR.2",
             # "GQZRECITMLZC", # "CT.NEPTUNE.PR.3",
