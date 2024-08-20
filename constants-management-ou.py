@@ -334,7 +334,7 @@ GUARDRAILS_CONFIGURATION = [
             "CAOCWBICFGOB", # "CT.IAM.PR.2",
             "DIYAWISHCSUP", # "CT.IAM.PR.3",
             "NIQNDDIAPPYT", # "CT.IAM.PR.4",
-            "PSTEFAEBICWJ", # "CT.IAM.PR.5",
+            # "PSTEFAEBICWJ", # "CT.IAM.PR.5",
             # "KREYISSWDIIL", # "CT.KINESIS.PR.1",
             # "KZDJWGKCNWVI", # "CT.KMS.PR.1",
             # "BAGTSQZJEERJ", # "CT.LAMBDA.PR.2",
